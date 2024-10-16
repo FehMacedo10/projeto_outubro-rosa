@@ -209,8 +209,8 @@ footer section .outubroRosa {
     justify-content: space-around;
   }
   main .secao1 p {
-    font-size: 1.563rem;
-    line-height: 2.128rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     width: 40%;
   }
   main .secao1 img {
@@ -224,9 +224,9 @@ footer section .outubroRosa {
     align-items: center;
   }
   main .secao2 p {
-    font-size: 1.563rem;
-    line-height: 2.128rem;
-    width: 33.5%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 35%;
   }
   main .secao2 img {
     padding: 0;
