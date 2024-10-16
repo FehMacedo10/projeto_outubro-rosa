@@ -117,9 +117,9 @@ main {
         padding: 2vh 0 2vh 0;
         background-color: $rosa-claro;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
         gap: 10px; // Espaçamento entre as imagens
 
         // Estilizando as imagens individuais
@@ -217,7 +217,7 @@ footer {
                 width: 50%; // Reduz o tamanho da imagem
             }
         }
-        
+
         .secao2{
             p {
                 font-size: 1.25rem;

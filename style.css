@@ -85,9 +85,9 @@ main .imagensdeConscientizacao {
   padding: 2vh 0 2vh 0;
   background-color: #FFD9EC;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 main .imagensdeConscientizacao img {
