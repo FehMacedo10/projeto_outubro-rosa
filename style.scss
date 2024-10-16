@@ -1,0 +1,358 @@
+// Definição de variáveis para facilitar a manutenção das cores e fontes
+$fonte-padrao: 'Noto Sans', sans-serif;
+$rosa-claro: #FFD9EC;
+$rosa-forte: #FF69B4;
+$fonte-branco: #E4EEF1;
+
+// Reset básico de margens, espaçamentos e configurações de box-sizing para garantir consistência
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fonte-padrao; // Definindo a fonte padrão para todo o site
+    list-style: none; // Removendo estilos de lista
+}
+
+// Estilizações para o header
+header {
+    background-color: $rosa-forte;
+    display: flex; // Flexbox para layout flexível
+    flex-direction: column; 
+    justify-content: space-around; 
+    
+    // Estilizações para a caixa que contém o logo e o título
+    .caixaLogo {
+        display: flex; // Flexbox para alinhar logo e título
+        align-items: center; 
+        justify-content: space-evenly;
+        border-bottom: solid 1px $rosa-claro; // Linha separadora abaixo do logo e título
+        
+        // Estilizando a imagem do logo
+        img {
+            width: 17%; // Definindo a largura do logo
+        }
+        
+        // Estilizando o título (h1)
+        h1 {
+            color: $fonte-branco;
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: 1.75rem;
+            display: flex; 
+            justify-content: center; 
+            width: 70%; // Definindo a largura do título
+        }
+    }
+    
+    // Estilizações para o menu de navegação (ul)
+    ul {
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        // Estilizando os links do menu
+        a {
+            color: $fonte-branco;
+            text-transform: uppercase;
+            text-decoration: none; 
+            font-size: 1rem; 
+        }
+    }
+}
+
+// Estilizações para o main (conteúdo principal)
+main {
+    display: flex; // Layout flexível para organizar as seções
+    
+    // Estilizando a primeira seção
+    .secao1 {
+        background-color: $rosa-claro;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        // Estilizando o parágrafo da seção 1
+        p {
+            padding: 2vh 2vh 2vh 1.5vh;
+            font-size: 1rem;
+            display: flex;
+            text-align: left;
+            line-height: 1.5rem;
+        }
+
+        // Estilizando a imagem da seção 1
+        img {
+            width: 97%;
+            padding: 0 0 2vh 0;
+        }
+    }
+    
+    // Estilizando a segunda seção
+    .secao2 {
+        background-color: $rosa-forte;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+        // Estilizando o parágrafo da seção 2
+        p {
+            color: $fonte-branco;
+            padding: 2vh 2vh 2vh 1.5vh;
+            font-size: 1rem;
+            display: flex;
+            text-align: left;
+            line-height: 1.5rem;
+        }
+
+        // Estilizando a imagem da seção 2
+        img {
+            width: 97%;
+            padding: 0 0 2vh 0;
+        }
+    }
+
+    // Seção de imagens de conscientização
+    .imagensdeConscientizacao {
+        padding: 2vh 0 2vh 0;
+        background-color: $rosa-claro;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px; // Espaçamento entre as imagens
+
+        // Estilizando as imagens individuais
+        img {
+            width: 35%;
+            transition: transform 0.4s ease; // Animação suave para hover
+            cursor: pointer;
+        } 
+    }
+}
+
+// Efeito hover nas imagens de conscientização
+.imagensdeConscientizacao img:hover {
+    transform: scale(1.05); // Aumenta a imagem ao passar o mouse
+}
+
+// Estilizações para o footer (rodapé)
+footer {
+    background-color: $rosa-forte;
+    display: flex;
+    align-items: center;
+
+    // Estilizações para a seção de redes sociais
+    .redesSociais {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        // Estilizando as imagens das redes sociais
+        img {
+            width: 80%;
+        }
+    }
+
+    // Caixa de direitos autorais
+    .caixaDireitosAutorais {
+        display: flex;
+        flex-direction: column;
+        color: $fonte-branco;
+        font-size: 0.70rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+    // Seção de imagem do "Outubro Rosa"
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        
+        // Estilizando a imagem do "Outubro Rosa"
+        .outubroRosa {
+            width: 80%;
+            transition: transform 0.4s ease;
+            cursor: pointer;
+            
+        }
+    }
+}
+
+// Efeito hover na imagem do "Outubro Rosa"
+.outubroRosa:hover {
+    transform: scale(1.1);
+}
+
+// Estilizações para telas maiores (min-width: 641px)
+@media (min-width: 641px) {
+    header {
+        .caixaLogo {
+            h1 {
+                font-size: 3rem; // Aumenta o tamanho do título para telas maiores
+            }
+
+            img {
+                display: flex;
+                width: 15%; // Ajusta o tamanho do logo
+            }
+        }
+        
+        ul {
+            height: 5vh; // Mantém a altura do menu
+            
+            a {
+                font-size: 1.25rem; // Aumenta o tamanho dos links para melhor leitura
+            }
+        }
+    }
+    main {
+        .secao1{
+            p {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+            }
+
+            img {
+                width: 50%; // Reduz o tamanho da imagem
+            }
+        }
+        
+        .secao2{
+            p {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+            }
+
+            img {
+                width: 50%;     
+            }
+        }
+    }
+    
+    footer {
+        justify-content: space-between; // Distribui os elementos no rodapé
+        
+        .redesSociais{
+            justify-content: space-around; // Alinha ícones de redes sociais
+            align-items: center;
+        }
+        
+        .caixaDireitosAutorais {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+    }
+}
+
+// Estilizações para telas grandes (min-width: 1024px)
+@media (min-width: 1024px) {
+    header {
+        padding: 30px; // Adiciona padding ao header
+        height: 118px; // Define altura fixa
+        flex-direction: row; // Coloca logo e menu em linha
+        justify-content: space-between; // Espaça os elementos
+        align-items: center; // Centraliza verticalmente
+    
+        .caixaLogo {
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: none;
+            h1 {
+                font-size: 1.75rem;
+                line-height: 2.4rem;
+            }
+            
+            img {
+                width: auto; // Tamanho automático do logo
+            }
+        }
+        nav {
+            width: 60%;
+
+            ul {
+                a {
+                    font-size: 1.75rem;
+                    line-height: 2.4rem;
+                }
+            }
+        }
+    }
+    
+    main {
+        .secao1 {
+            height: 377px; // Altura fixa da seção 1
+            flex-direction: row;
+            justify-content: space-around;
+
+            p {
+                font-size: 1.563rem;
+                line-height: 2.128rem;
+                width: 40%; 
+            }
+
+            img {
+                padding: 0; // Remove padding
+                width: auto;
+            }
+        }
+
+        .secao2 {
+            height: 262px; // Altura fixa da seção 2
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            p {
+                font-size: 1.563rem;
+                line-height: 2.128rem;
+                width: 33.5%; // Define largura do parágrafo
+            }
+
+            img {
+                padding: 0;
+                width: auto;
+            }
+        }
+        
+        .imagensdeConscientizacao {
+            padding: 0;
+            height: 426px;
+            flex-direction: row;
+            flex-wrap: nowrap; // Impede a quebra de linha
+            justify-content: space-evenly;
+            
+            img {
+                width: auto;
+            }
+        }
+    }
+    
+    footer {
+        height: 143px;
+        justify-content: space-around;
+        align-items: center;
+
+        
+        .redesSociais {
+            flex-direction: row;
+            gap: 50px; // Espaçamento entre os ícones            
+            
+            img {
+                width: auto;
+            }
+        }
+        
+        .caixaDireitosAutorais {
+            font-size: 1.25rem;
+            line-height: 1.703rem;
+            padding-right: 8vw; // Espaçamento direito
+        }
+
+        div {
+            .outubroRosa {
+                width: auto;
+            }
+        }
+    }
+}

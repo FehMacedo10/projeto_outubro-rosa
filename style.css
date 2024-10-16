@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  list-style: none;
+}
+
+header {
+  background-color: #FF69B4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+header .caixaLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: solid 1px #FFD9EC;
+}
+header .caixaLogo img {
+  width: 17%;
+}
+header .caixaLogo h1 {
+  color: #E4EEF1;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+header ul {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header ul a {
+  color: #E4EEF1;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+}
+main .secao1 {
+  background-color: #FFD9EC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .secao1 p {
+  padding: 2vh 2vh 2vh 1.5vh;
+  font-size: 1rem;
+  display: flex;
+  text-align: left;
+  line-height: 1.5rem;
+}
+main .secao1 img {
+  width: 97%;
+  padding: 0 0 2vh 0;
+}
+main .secao2 {
+  background-color: #FF69B4;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+main .secao2 p {
+  color: #E4EEF1;
+  padding: 2vh 2vh 2vh 1.5vh;
+  font-size: 1rem;
+  display: flex;
+  text-align: left;
+  line-height: 1.5rem;
+}
+main .secao2 img {
+  width: 97%;
+  padding: 0 0 2vh 0;
+}
+main .imagensdeConscientizacao {
+  padding: 2vh 0 2vh 0;
+  background-color: #FFD9EC;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+main .imagensdeConscientizacao img {
+  width: 35%;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.imagensdeConscientizacao img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #FF69B4;
+  display: flex;
+  align-items: center;
+}
+footer .redesSociais {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .redesSociais img {
+  width: 80%;
+}
+footer .caixaDireitosAutorais {
+  display: flex;
+  flex-direction: column;
+  color: #E4EEF1;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  text-align: center;
+}
+footer section {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+footer section .outubroRosa {
+  width: 80%;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.outubroRosa:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 641px) {
+  header .caixaLogo h1 {
+    font-size: 3rem;
+  }
+  header .caixaLogo img {
+    display: flex;
+    width: 15%;
+  }
+  header ul {
+    height: 5vh;
+  }
+  header ul a {
+    font-size: 1.25rem;
+  }
+  main .secao1 p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  main .secao1 img {
+    width: 50%;
+  }
+  main .secao2 p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  main .secao2 img {
+    width: 50%;
+  }
+  footer {
+    justify-content: space-between;
+  }
+  footer .redesSociais {
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .caixaDireitosAutorais {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 30px;
+    height: 118px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .caixaLogo {
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: none;
+  }
+  header .caixaLogo h1 {
+    font-size: 1.75rem;
+    line-height: 2.4rem;
+  }
+  header .caixaLogo img {
+    width: auto;
+  }
+  header nav {
+    width: 60%;
+  }
+  header nav ul a {
+    font-size: 1.75rem;
+    line-height: 2.4rem;
+  }
+  main .secao1 {
+    height: 377px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .secao1 p {
+    font-size: 1.563rem;
+    line-height: 2.128rem;
+    width: 40%;
+  }
+  main .secao1 img {
+    padding: 0;
+    width: auto;
+  }
+  main .secao2 {
+    height: 262px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  main .secao2 p {
+    font-size: 1.563rem;
+    line-height: 2.128rem;
+    width: 33.5%;
+  }
+  main .secao2 img {
+    padding: 0;
+    width: auto;
+  }
+  main .imagensdeConscientizacao {
+    padding: 0;
+    height: 426px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  main .imagensdeConscientizacao img {
+    width: auto;
+  }
+  footer {
+    height: 143px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .redesSociais {
+    flex-direction: row;
+    gap: 50px;
+  }
+  footer .redesSociais img {
+    width: auto;
+  }
+  footer .caixaDireitosAutorais {
+    font-size: 1.25rem;
+    line-height: 1.703rem;
+    padding-right: 8vw;
+  }
+  footer div .outubroRosa {
+    width: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
