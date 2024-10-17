@@ -33,7 +33,4 @@ Abra o arquivo index.html no navegador de sua preferência.
 ## 🎯 Objetivo
 Este projeto foi criado para fins educacionais e para apoiar a causa do Outubro Rosa, promovendo a conscientização sobre a saúde da mulher e o combate ao câncer de mama.
 
-Feito com ❤️ por [Felipe Macedo Ribeiro] e [Vai na Web].
-
-```
-Esse arquivo `README.md` é uma boa introdução para quem acessar o projeto no GitHub, explicando de forma clara e direta o que o projeto faz, as tecnologias utilizadas e como rodá-lo.
+Feito por [Felipe Macedo Ribeiro] e [Vai na Web].
