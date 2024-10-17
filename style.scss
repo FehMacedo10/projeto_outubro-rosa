@@ -163,6 +163,7 @@ footer {
         line-height: 1rem;
         text-align: center;
     }
+    
     // Seção de imagem do "Outubro Rosa"
     section {
         display: flex;
@@ -173,8 +174,7 @@ footer {
         .outubroRosa {
             width: 80%;
             transition: transform 0.4s ease;
-            cursor: pointer;
-            
+            cursor: pointer;            
         }
     }
 }
@@ -206,6 +206,7 @@ footer {
             }
         }
     }
+    
     main {
         .secao1{
             p {
@@ -333,7 +334,6 @@ footer {
         justify-content: space-around;
         align-items: center;
 
-        
         .redesSociais {
             flex-direction: row;
             gap: 50px; // Espaçamento entre os ícones            
