@@ -33,4 +33,4 @@ Abra o arquivo index.html no navegador de sua preferência.
 ## 🎯 Objetivo
 Este projeto foi criado para fins educacionais e para apoiar a causa do Outubro Rosa, promovendo a conscientização sobre a saúde da mulher e o combate ao câncer de mama.
 
-Feito por [Felipe Macedo Ribeiro] (https://github.com/FehMacedo10) e [Vai na Web].
+Feito por [Felipe Macedo Ribeiro](https://github.com/FehMacedo10) e instruído pela programa **Vai na Web.**
