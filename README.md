@@ -23,9 +23,6 @@ O layout é totalmente **responsivo**, garantindo uma boa experiência tanto em 
 
 O design foi feito para ser simples, acessível e agradável, com cores suaves e tipografia clara, respeitando o simbolismo do movimento **Outubro Rosa**.
 
-## 📂 Estrutura de Arquivos
-
-
 ## 💻 Como Executar Localmente
 
 1. Clone o repositório:
