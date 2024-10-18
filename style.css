@@ -102,18 +102,20 @@ main .imagensdeConscientizacao img {
 
 footer {
   background-color: #FF69B4;
+}
+footer address {
   display: flex;
   align-items: center;
 }
-footer .redesSociais {
+footer address .redesSociais {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-footer .redesSociais img {
+footer address .redesSociais img {
   width: 80%;
 }
-footer .caixaDireitosAutorais {
+footer address .caixaDireitosAutorais {
   display: flex;
   flex-direction: column;
   color: #E4EEF1;
@@ -121,12 +123,12 @@ footer .caixaDireitosAutorais {
   line-height: 1rem;
   text-align: center;
 }
-footer section {
+footer address section {
   display: flex;
   align-items: center;
   justify-content: end;
 }
-footer section .outubroRosa {
+footer address section .outubroRosa {
   width: 80%;
   transition: transform 0.4s ease;
   cursor: pointer;
@@ -164,14 +166,14 @@ footer section .outubroRosa {
   main .secao2 img {
     width: 50%;
   }
-  footer {
+  footer address {
     justify-content: space-between;
   }
-  footer .redesSociais {
+  footer address .redesSociais {
     justify-content: space-around;
     align-items: center;
   }
-  footer .caixaDireitosAutorais {
+  footer address .caixaDireitosAutorais {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
@@ -242,24 +244,24 @@ footer section .outubroRosa {
   main .imagensdeConscientizacao img {
     width: 15%;
   }
-  footer {
+  footer address {
     height: 143px;
     justify-content: space-around;
     align-items: center;
   }
-  footer .redesSociais {
+  footer address .redesSociais {
     flex-direction: row;
     gap: 50px;
   }
-  footer .redesSociais img {
+  footer address .redesSociais img {
     width: auto;
   }
-  footer .caixaDireitosAutorais {
+  footer address .caixaDireitosAutorais {
     font-size: 1.25rem;
     line-height: 1.703rem;
     padding-right: 8vw;
   }
-  footer div .outubroRosa {
+  footer address div .outubroRosa {
     width: auto;
   }
 }/*# sourceMappingURL=style.css.map */

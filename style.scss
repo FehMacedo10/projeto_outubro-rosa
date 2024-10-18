@@ -139,42 +139,44 @@ main {
 // Estilizações para o footer (rodapé)
 footer {
     background-color: $rosa-forte;
-    display: flex;
-    align-items: center;
 
-    // Estilizações para a seção de redes sociais
-    .redesSociais {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
-        // Estilizando as imagens das redes sociais
-        img {
-            width: 80%;
-        }
-    }
-
-    // Caixa de direitos autorais
-    .caixaDireitosAutorais {
-        display: flex;
-        flex-direction: column;
-        color: $fonte-branco;
-        font-size: 0.70rem;
-        line-height: 1rem;
-        text-align: center;
-    }
-    
-    // Seção de imagem do "Outubro Rosa"
-    section {
+    address {
         display: flex;
         align-items: center;
-        justify-content: end;
+        // Estilizações para a seção de redes sociais
+        .redesSociais {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         
-        // Estilizando a imagem do "Outubro Rosa"
-        .outubroRosa {
+            // Estilizando as imagens das redes sociais
+            img {
             width: 80%;
-            transition: transform 0.4s ease;
-            cursor: pointer;            
+            }
+        }
+
+        // Caixa de direitos autorais
+        .caixaDireitosAutorais {
+            display: flex;
+            flex-direction: column;
+            color: $fonte-branco;
+            font-size: 0.70rem;
+            line-height: 1rem;
+            text-align: center;
+        }
+    
+        // Seção de imagem do "Outubro Rosa"
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        
+            // Estilizando a imagem do "Outubro Rosa"
+            .outubroRosa {
+                width: 80%;
+                transition: transform 0.4s ease;
+                cursor: pointer;            
+            }
         }
     }
 }
@@ -232,16 +234,18 @@ footer {
     }
     
     footer {
-        justify-content: space-between; // Distribui os elementos no rodapé
+        address {
+            justify-content: space-between; // Distribui os elementos no rodapé
+            
+            .redesSociais{
+                justify-content: space-around; // Alinha ícones de redes sociais
+                align-items: center;
+            }
         
-        .redesSociais{
-            justify-content: space-around; // Alinha ícones de redes sociais
-            align-items: center;
-        }
-        
-        .caixaDireitosAutorais {
-            font-size: 1.25rem;
-            line-height: 1.75rem;
+            .caixaDireitosAutorais {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+            }
         }
     }
 }
@@ -330,28 +334,30 @@ footer {
     }
     
     footer {
-        height: 143px;
-        justify-content: space-around;
-        align-items: center;
+        address {
+            height: 143px;
+            justify-content: space-around;
+            align-items: center;
 
-        .redesSociais {
-            flex-direction: row;
-            gap: 50px; // Espaçamento entre os ícones            
+            .redesSociais {
+                flex-direction: row;
+                gap: 50px; // Espaçamento entre os ícones            
             
-            img {
-                width: auto;
+                img {
+                    width: auto;
+                }
             }
-        }
         
-        .caixaDireitosAutorais {
-            font-size: 1.25rem;
-            line-height: 1.703rem;
-            padding-right: 8vw; // Espaçamento direito
-        }
+            .caixaDireitosAutorais {
+                font-size: 1.25rem;
+                line-height: 1.703rem;
+                padding-right: 8vw; // Espaçamento direito
+            }
 
-        div {
-            .outubroRosa {
-                width: auto;
+            div {
+                .outubroRosa {
+                    width: auto;
+                }
             }
         }
     }
