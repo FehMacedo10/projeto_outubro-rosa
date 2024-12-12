@@ -27,7 +27,7 @@ O design foi feito para ser simples, acessível e agradável, com cores suaves e
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/FehMacedo10/projeto_outubro-rosa
 Abra o arquivo index.html no navegador de sua preferência.
 
 ## 🎯 Objetivo
